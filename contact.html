@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+<title>Contact</title>
+<script type="text/javascript" 
+        src="jquery-1.5.1.min.js"></script>
+<script type="text/javascript" 
+src="jquery-validation-1.8.0/jquery.validate.min.js"></script>
+<script type="text/javascript">
+   $(document).ready(function() {    
+      $("#formulir").validate();
+   });
+</script>        
+<style type="text/css">
+   label {
+      float: left;
+      width: 200px;
+   }
+   
+   p { clear: both; }
+   
+   input { 
+      margin-left: .5em; 
+      float: left; 
+      border: 1px solid black; m
+      argin-bottom: .5em;  
+   }
+   input.error { 
+      border: 1px solid red; 
+      width: auto; 
+   }
+   label.error {
+      background: 
+         url("jquery-validation-1.8.0/demo/images/unchecked.gif") 
+         no-repeat;
+      padding-left: 16px;
+      margin-left: .3em;
+   }
+</style>   
+</head>
+
+
+<body>
+<div id="container"> 
+<div id="title"><h1><center>Expression Design Studio </h1></center></div>
+<div id="banner" > </div>
+	<div class="header">
+	
+
+	<div id="menu">
+
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li> <a href="news.html">NEWS</a></li>
+		<li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+		<li><a href="clients.html">CLIENTS</a></li>
+		<li><a href="teams.html">TEAMS</a></li>
+		<li><a href="contact.html">CONTACT</a></li>
+	</ul>
+</div>
+</div>
+	<div id="content">
+	<h2 style="padding:30px; border-radius:10px 10px 10px 10px;background-color:ghostwhite;">
+		<span class"Contact"> Contact</span></h2>
+        
+<div id="address">
+
+<div class="address_left">
+
+<img src="images/architectural-rendering.jpg" style="width:100px; height:100px; float:left; margin:10px 10px 10px 50px;border-radius:15px 15px 15px 15px; border:2px solid white" />
+
+<div class="address_right" style="padding:10px 10px 0px 10px">
+<h4 style="float:left; padding-bottom:10px"> Our address</h4><br />
+
+<h6 style="float:left"> INDONESIA - WEST JAVA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Phone: +628-752-0119999<br>
+13 Soedirman Street &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Fax: +628-752-0119888 <br>
+Bogor City 166110&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;	</h6></div></div>
+
+	<div id="contact" style="border-radius:10px 10px 10px 10px; background-color:lavender">
+    <h4 style="padding:12px; color:black"><center>Send us a message with any questions you have many</center></h4>
+    
+
+    
+<form id="formulir" action="info.php" method="post" style="float:left" >
+      <p>
+         <label>Nama: </label>
+         <input type="text" id="nama" name="nama" 
+                value="" class="required" />
+      </p><br>
+      <p>
+         <label>Email: </label>
+         <input type="text" id="email" name="email" 
+                value="" class="required email" />
+      </p><br>
+ 
+ 
+ 
+      <textarea name="isi" style="width:350px; height:180px"></textarea><br><br>
+      <input type="submit" value="Kirim" />
+  	  <input type="reset" value="Reset" />
+   </form>
+
+
+
+
+
+</div>
+	<div class="footerline"style="clear:both;">
+
+		 <a href="http://www.facebook.com"><img src="images/facebook.png" alt="facebook" style="width:32px; height:32px; margin:3px;" /></a>
+		<a href="http://www.twitter.com"><img src="images/twitter.png" alt="twitter" style="width:32px; height:32px; margin:3px" /></a>
+		<a href="http://www.google.com"><img src="images/google.png" alt="google" style="width:32px; height:32px; margin:3px"/></a>
+		<a href="http://www.youtube.com"><img src="images/youtube.png" alt="youtube" style="width:32px; height:32px; margin:3px"/></a>
+</div>
+
+<div class="footer"><font color="black">Copyright &copy; 2012
+ Expression Studio</font></div>
+</div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>

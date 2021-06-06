@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="about us.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<script type="text/javascript" src="jquery-tutorials/jquery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	$(".accordion2 h3").eq(2).addClass("active");
+	$(".accordion2 p").eq(2).show();
+
+	$(".accordion2 h3").click(function(){
+		$(this).next("p").slideToggle("slow")
+		.siblings("p:visible").slideUp("slow");
+		$(this).toggleClass("active");
+		$(this).siblings("h3").removeClass("active");
+	});
+
+});
+</script>
+
+<style type="text/css">
+body {
+	margin: 10px auto;
+	width: 800px;
+	font-size:12px,  Arial, Helvetica, sans-serif;
+}
+.accordion2 {
+	width: 800pxpx;
+	border-bottom: solid 1px #c4c4c4;
+}
+.accordion2 h3 {
+	background: #e9e7e7 url(images/arrow-square.gif) no-repeat right -51px;
+	padding: 5px 15px;
+	margin: 0;
+	font: bold 120%/100% Arial, Helvetica, sans-serif;
+	border: solid 1px #c4c4c4;
+	border-bottom: none;
+	cursor: pointer;
+}
+.accordion2 h3:hover {
+	background-color: #e3e2e2;
+}
+.accordion2 h3.active {
+	background-position: left 5px;
+}
+.accordion2 p {
+	background: #f7f7f7;
+	margin: 0;
+	padding: 10px 5px 5px 5px;
+	border-left: solid 1px #c4c4c4;
+	border-right: solid 1px #c4c4c4;
+	display: none;
+	height:auto;
+	text-align:left;
+}
+</style>
+
+<body>
+<div id="container"> 
+<div id="title"><h1><center>Expression Design Studio </h1></center></div>
+<div id="banner" > </div>
+	<div class="header">
+	
+
+	<div id="menu">
+
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li> <a href="news.html">NEWS</a></li>
+		<li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+		<li><a href="clients.html">CLIENTS</a></li>
+		<li><a href="about us.html">TEAMS</a></li>
+		<li><a href="contact.html">CONTACT</a></li>
+	</ul>
+</div>
+</div>
+	<div id="content">
+	<h2 style="padding:30px; border-radius:10px 10px 10px 10px;background-color:ghostwhite;">
+		<span class"Recent"> Recent</span>
+	Projects
+	</h2>
+	
+    <div id="panel">
+	<div class="accordion2">
+	<h3>Creative/Art Director</h3>
+	<p><img src="images/olaf.jpg"  style=" width:90px; height:210px; float:left; margin:1px 30px 20px 20px;"/>
+    Chandra<br />
+    Creative/Art Director<br />
+     Age :20 <br /><br />
+     Born in Padang came to Bogor to make a 3d master. Has worked as designer and art director for several agencies. He is Co-founder of Expreession Studio and works doing multidiscipline tasks such as art direction, 3d, and motiongraphics</p>
+     
+
+     
+	<h3>3D Artist</h3>
+	<p><img src="images/cesar.jpg" style=" width:90px; height:190px; float:left; margin:1px 30px 20px 20px;"/>
+    Pratama<br />
+    3D Artist<br />
+     Age :20 <br /><br />
+     Born in the land of glaciers, volcano’s and aurora borealis.
+Loves shark, sheep balls and brennivín. Studied Art direction in Bandung. A former house pet of
+Expression Studio in Bcn, and now
+Expression’s contact in Iceland.</p>
+     
+	<h3>Multimedia Designer</h3>
+	<p><img src="images/Jorge_avatar.png"  style=" width:90px; height:210px; float:left; margin:1px 30px 20px 20px;"/>
+    Putra<br />
+    Multimedia Designer<br />
+     Age :20 <br /><br />
+     Co-founder of Expression Studio.
+Studied Comics & Animation in the U.S.A, Graphic Design in Florence and 3D Animation in Barcelona. Has been teaching for 3 years at IED in Barcelona in the subjects of Advertising and Interior Design with particular focus on graphical programs, layout presentation and drawing.</p>
+
+	<h3>Animator Illustrator</h3>
+	<p><img src="images/Giannis_avatar_B.png"  style=" width:90px; height:190px; float:left; margin:1px 30px 20px 20px;"/>
+    INF<br />
+    Animator Illustrator<br />
+     Age :20 <br /><br />
+     Very loves art, animation and coffee! He has worked on film, games and television as an animator, designer and storyboard artist. Most recently as an animator on Sesame Street’s
+“Abby’s Flying Fairy School.”</p>
+</div>
+ 
+
+
+	<div class="footerline">
+
+		 <a href="http://www.facebook.com"><img src="images/facebook.png" alt="facebook" style="width:32px; height:32px; margin:3px;" /></a>
+		<a href="http://www.twitter.com"><img src="images/twitter.png" alt="twitter" style="width:32px; height:32px; margin:3px" /></a>
+		<a href="http://www.google.com"><img src="images/google.png" alt="google" style="width:32px; height:32px; margin:3px"/></a>
+		<a href="http://www.youtube.com"><img src="images/youtube.png" alt="youtube" style="width:32px; height:32px; margin:3px"/></a>
+</div>
+
+
+<div class="footer"><font color="black">Copyright &copy; 2012
+ Expression Studio</font></div>
+</div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
